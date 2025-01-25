@@ -2,10 +2,10 @@
 
 int main(void) {
 
-  int sales1 = 0, sales2 = 0, sales3 = 0;
+  int sales1 = 0, sales2 = 0, sales3 = 0;                                //set variables
   char d, e, f, name;
 
-  do {
+  do {                                                                   //create do while loop
     printf("Please enter the name of the sales person:\n");
     scanf(" %c", &name);
 
@@ -21,11 +21,11 @@ int main(void) {
       printf("Please enter the sales for the day:\n");
       scanf("%d", &sales3);
 
-    } else if (name == 'z' || name == 'Z') {
-      printf("Grand total: %d\n", sales1 + sales2 + sales3);
+    } else if (name == 'z' || name == 'Z') {                              //set the exit condition
+      printf("Grand total: %d\n", sales1 + sales2 + sales3);              //print grand total
 
-      if (sales1 > sales2 && sales1 > sales3) {
-        printf("Highest Sale: Danielle\n");
+      if (sales1 > sales2 && sales1 > sales3) {                           //create if statements for highest sales
+        printf("Highest Sale: Danielle\n");                               //print highest sales
       }
       if (sales2 > sales1 && sales2 > sales3) {
         printf("Highest Sale: Edward\n");
